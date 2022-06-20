@@ -1,16 +1,19 @@
 import React from 'react';
-import { Button } from 'antd';
-import 'antd/dist/antd.css';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import FourKIcon from '@mui/icons-material/FourK';
+
 const App=()=> {
   return (
     <div className="App">
-          <Button type="primary">Primary Button</Button>
-    <Button>Default Button</Button>
-    <Button type="dashed">Dashed Button</Button>
-    <br />
-    <Button type="text">Text Button</Button>
-    <Button type="link">Link Button</Button>
-      
+<Stack spacing={2} direction="row">
+      <Button variant="text">Text</Button>
+      <Button variant="contained">Contained</Button>
+      <Button variant="outlined">Outlined</Button>
+    </Stack>     
+        <FourKIcon />
+   
+      khbckxvkjxnl
     </div>
   );
 }
